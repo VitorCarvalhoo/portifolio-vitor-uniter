@@ -3,6 +3,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color: bisque;
+}
+
 .paginas-geral{
     background-color: #f0f0f0; /* Cor de fundo clara */
     color: #333; /* Cor do texto escura para contraste */
