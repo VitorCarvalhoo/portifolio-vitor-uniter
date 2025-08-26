@@ -8,12 +8,34 @@ body{
 }
 
 .paginas-geral{
-    background-color: #f0f0f0; /* Cor de fundo clara */
     color: #333; /* Cor do texto escura para contraste */
-   text-align: center;
+    text-align: center;
 }
 
-.icons{
+#sobre-mim, #projetos, #formacao{
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar a seção */
+    max-width: 800px; /* Largura máxima para melhor leitura */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+    text-align: justify; /* Justifica o texto para melhor aparência */
+    align-items: center;
+}
+
+#contato form{
+    display: flex; /* Usa flexbox para alinhar os elementos do formulário */
+    flex-direction: column; /* Alinha os elementos em coluna */
+    gap: 15px; /* Espaçamento entre os elementos */
+    max-width: 400px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo clara */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.icons, .icons-back{
     display: flex; /* Usa flexbox para alinhar os ícones */
     justify-content: center; /* Centraliza os ícones horizontalmente */
     align-items: center; /* Centraliza os ícones verticalmente */
@@ -22,14 +44,37 @@ body{
 }
 
 .icons img{
-    width: 220px; /* Tamanho dos ícones */
-    height: 220px;
+    width: 180px; /* Tamanho dos ícones */
+    height: 180px;
+}
+
+.icons-back img{
+    width: 50px; /* Tamanho do ícone de voltar */
+    height: 50px;
+    align-items: center;
+
 }
 
 .icons img:hover{
     transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
     transition: transform 0.4s; /* Animação suave */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.icons-back img:hover{
+    transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
+    transition: transform 0.4s; /* Animação suave */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+button{
+    background-color: #333; /* Cor de fundo escura */
+    color: white; /* Cor do texto branca */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 16px; /* Tamanho da fonte */
 }
 
 footer{
@@ -40,4 +85,22 @@ footer{
     position: relative; /* Permite posicionamento absoluto dos elementos filhos */
     bottom: 0; /* Mantém o rodapé na parte inferior da página */
     width: 99%; /* Garante que o rodapé ocupe toda a largura da página */
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.3s;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
 }
