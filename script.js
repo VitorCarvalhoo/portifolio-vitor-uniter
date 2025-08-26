@@ -15,10 +15,10 @@ document.getElementById("enviar-form").addEventListener("click", function(event)
     showToast("Obrigado por entrar em contato! Responderemos em breve.");
 
     // Limpa os campos do formulário
-    document.getElementById("contato-form").reset(); // Reseta o formulário
+    document.getElementById("contact-form").reset(); // Reseta o formulário
 });
 
-document.getElementById("contato").addEventListener("submit", function(event) {
+document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();    
 });
 
@@ -31,5 +31,6 @@ function showToast(message) { // Função para exibir uma mensagem tipo "toast" 
     }, 3000);
 
 }
+
 
 
