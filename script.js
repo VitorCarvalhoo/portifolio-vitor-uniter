@@ -1,4 +1,4 @@
-document.getElementById("enviar-form").addEventListener("click", function(event) { // Adiciona um ouvinte de evento ao botão de envio do formulário
+document.getElementById("enviar-form").addEventListener("submit", function(event) { // Adiciona um ouvinte de evento ao botão de envio do formulário
     event.preventDefault(); // Impede o envio padrão do formulário
 
     // Coleta os valores dos campos do formulário
@@ -27,4 +27,5 @@ function showToast(message) { // Função para exibir uma mensagem tipo "toast" 
     setTimeout(function() {
         toast.classList.remove("show");
     }, 3000);
+
 }
