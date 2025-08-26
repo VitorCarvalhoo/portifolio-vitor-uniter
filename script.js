@@ -1,6 +1,4 @@
 document.getElementById("enviar-form").addEventListener("click", function(event) { // Adiciona um ouvinte de evento ao botão de envio do formulário
-    event.preventDefault(); // Impede o envio padrão do formulário
-
     // Coleta os valores dos campos do formulário
     const nome = document.getElementById("nome").value;
     const email = document.getElementById("email").value;
@@ -33,4 +31,5 @@ function showToast(message) { // Função para exibir uma mensagem tipo "toast" 
     }, 3000);
 
 }
+
 
