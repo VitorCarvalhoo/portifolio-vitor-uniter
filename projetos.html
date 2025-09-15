@@ -5,20 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos Pessoais</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> <!-- Icone do site -->
+    <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/style.css"> <!-- Link para o arquivo CSS externo -->    
 </head>
 <body>
-    <div id="projetos">
-        <h1 style="text-align: center; font-size: 25px;">Projetos Pessoais</h1>
-        <p>Aqui estão alguns dos meus projetos pessoais que desenvolvi ao longo do tempo. Estes projetos refletem minhas habilidades e interesses em diversas áreas da tecnologia e programação.</p>
-        <ul>
-            <li><strong>Site de Portfólio:</strong> Um site pessoal onde apresento meu currículo, habilidades e projetos anteriores. Desenvolvido usando HTML, CSS e JavaScript.</li>
-            <li><strong>Aplicativo de Tarefas:</strong> Um aplicativo simples para gerenciamento de tarefas diárias, desenvolvido com React Native para dispositivos móveis.</li>
-            <li><strong>Blog Técnico:</strong> Um blog onde compartilho artigos sobre programação, dicas e tutoriais. Construído com Jekyll e hospedado no GitHub Pages.</li>
-            <li><strong>Jogo 2D:</strong> Um jogo simples desenvolvido na Godot Engine (descontinuado).</li>
-        </ul>
-        <p>Estou sempre buscando novos desafios e oportunidades para aprender e crescer como desenvolvedor. Fique à vontade para explorar meus projetos e entrar em contato se tiver alguma dúvida ou sugestão!</p>
-    </div>
+    <section class="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="grid-projetos">
+            <div class="card">
+                <h3>To-do List</h3>
+                <p>Lista de tarefas feita com HTML, CSS e JS. Permite adicionar, concluir e excluir itens.</p>
+                <span class="tecnologias">JavaScript • CSS • HTML</span>
+                <a href="https://github.com/seu-usuario/todolist" target="_blank">Ver no GitHub</a>
+            </div>
+    
+            <div class="card">
+                <h3>Portfólio</h3>
+                <p>Meu site pessoal, feito do zero para mostrar meus projetos e minha trajetória.</p>
+                <span class="tecnologias">HTML • CSS</span>
+                <a href="https://seusite.com" target="_blank">Acessar</a>
+            </div>
+
+            <div class="card">
+                <h3>API de Filmes</h3>
+                <p>Consome dados de uma API pública e exibe informações sobre filmes de forma dinâmica.</p>
+                <span class="tecnologias">JavaScript • API REST</span>
+                <a href="https://github.com/seu-usuario/api-filmes" target="_blank">Ver no GitHub</a>
+            </div>
+            <div class="card">
+                <h3>Jogo Indie 2D</h3>
+                <p>Jogo simples desenvolvido com Godot Engine, focado em mecânicas de plataforma e aventura.</p>
+                <span class="tecnologias">GDScript</span>
+                <a href="https://github.com/seu-usuario/my-family-secrets" target="_blank">Ver no GitHub</a>
+            </div>
+        </div>
+    </section>
 
     <div class="icons-back">
         <a href="index.html"><img src="images/voltar-pagina.png" alt="Seta para esquerda" title="Voltar"></a>
@@ -30,4 +51,5 @@
         <p>Aluno Uninter RU: 5262850</p>
     </footer>    
 </body>
+
 </html>
